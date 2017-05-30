@@ -1,0 +1,14 @@
+<div>
+    <h1>Products</h1>
+    <hr/>
+    <div class='plp-thumb-row'>
+        <div *ngFor="let product of products" class='ui-widget-content ui-corner-all plp-thumb'>
+        <h2> <a routerLink='/product/1' routerLinkActive="active">{{ product.productName }}</a></h2>
+        <h4>{{ product.productDescription }}</h4>
+    </div>
+
+        </div>
+       
+    
+</div>
+<router-outlet></router-outlet>
